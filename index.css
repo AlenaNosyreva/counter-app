@@ -1,0 +1,62 @@
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  width: 100%;
+}
+
+.counter{
+  width: 700px;
+  margin: 0 auto;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: center;
+}
+
+@media (max-width: 1199px) {
+  .counter{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.counter__value{
+  font-size: 32px;
+  line-height: 44px;
+  color: #000000;
+}
+
+button{
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.counter__addButton,
+.counter__resetButton{
+  width: 500px;
+  height: 100px;
+  border-radius: 20px;
+  border: none;
+  background-color: #4191FF;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+
+.counter__resetButton{
+  background-color: #D45366;
+}
+
+.counter__addButton:hover,
+.counter__resetButton:hover{
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+.counter__addButton,
+.counter__resetButton{
+  width: 380px;
+}
+}
